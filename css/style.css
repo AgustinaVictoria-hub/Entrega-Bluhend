@@ -1,0 +1,278 @@
+body{
+    margin: 0px;
+}
+h1 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+h2 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+.welcome-card {
+    background-color: #f5f5dc; 
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 800px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+.welcome-card h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.welcome-card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+.pulseras{
+    color: rgb(83, 81, 81);
+}
+footer {
+    background-color: #000000; 
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.footer-section {
+    width: 30%; 
+    padding: 10px;
+}
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ddd;
+}
+.footer-section img {
+    max-width: 100%;
+    height: auto;
+}
+.footer-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
+}
+.footer-list p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ddd;
+}
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-section {
+        width: 100%; 
+        margin-bottom: 20px;
+    }
+    
+    
+    .footer-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.search-bar {
+    margin-left: auto;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #999;
+}
+header{
+    width: 100%;
+}
+nav{
+    width: 100%;
+}
+nav ul {
+    list-style: none; 
+    padding: 0;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: rgb(0, 0, 0); 
+padding: 20px; 
+margin: 0px;
+gap: 40px;
+}  
+nav ul li a {
+    text-decoration: none; 
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.img-principal img{
+    max-width: 100%; 
+    height: auto; 
+}
+.instagram {
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instagram img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.instagram-card {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.instagram-card h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.instagram-card p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.instagram-card button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.instagram-card button:hover {
+    background-color: #ddd;
+}
+/* Galería de productos */
+.pagina-acero .productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.pagina-acero .producto {
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.pagina-acero .producto:hover {
+    transform: scale(1.05); 
+}
+
+.pagina-acero .producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.pagina-acero .producto p {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.pagina-acero .pulseras p {
+    margin: 5px 0;
+    font-family: 'Playfair Display', serif;
+}
+.pagina-acero .producto img {
+    width: 80%; /* Ajusta el tamaño de las imágenes al 80% de su tamaño original */
+    max-width: 200px; /* Asegura que las imágenes no sean más grandes de 200px */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    margin-bottom: 10px; /* Espacio debajo de la imagen */
+}
+
+
+@media (max-width: 768px) {
+    .pagina-acero .productos {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+@media (max-width: 480px) {
+    .pagina-acero .productos {
+        grid-template-columns: 1fr; 
+    }
+}
+
+.pagina-acero .btn-comprar {
+    background-color: #000; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px; 
+    transition: background-color 0.3s;
+}
+
+.pagina-acero .btn-comprar:hover {
+    background-color: #ddd; 
+    color: #000; 
+}
+.btn-nuevos-productos {
+    background-color: transparent;
+    border: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.btn-nuevos-productos:hover {
+    color: #a66aa3; /* Un color suave tipo rosa o el que combine con tu estética */
+}
+
+.flecha-abajo {
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+/* Animación si querés que rote la flechita al hacer hover o click */
+.btn-nuevos-productos:hover .flecha-abajo {
+    transform: rotate(180deg);
+}
+
+
+
