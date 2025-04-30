@@ -1,0 +1,84 @@
+.atencion header {
+  background-color: #fff;
+  padding: 20px;
+}
+.atencion header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #333;
+}
+.atencion header nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.atencion header nav ul li {
+  list-style: none;
+}
+.atencion header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+.atencion header nav ul li a:hover {
+  color: #ddd;
+}
+.atencion main {
+  text-align: center;
+  padding: 40px 0;
+}
+.atencion main h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: #333;
+}
+.atencion main .welcome-card {
+  background-color: #f5f5dc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+.atencion main .welcome-card .pulseras {
+  font-family: "Playfair Display", serif;
+}
+.atencion main .welcome-card .pulseras p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+.atencion main .welcome-card p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+}
+.atencion footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+}
+.atencion footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+.atencion footer .footer-container .footer-section {
+  width: 30%;
+}
+.atencion footer .footer-container .footer-section h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  color: #333;
+}
+.atencion footer .footer-container .footer-section p {
+  font-size: 14px;
+  color: #333;
+}
+.atencion footer .footer-container .footer-section .footer-list p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+.atencion footer .footer-container .footer-section img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=atencion.css.map */

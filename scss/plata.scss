@@ -1,0 +1,78 @@
+@use 'variables';
+@use 'mixins';
+.pagina-acero {
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: variables.$gap-between-cards;
+      padding: 20px;
+      margin-top: 20px;
+  
+      @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+  
+      @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+      }
+    }
+  
+    .producto {
+      @include mixins.card-estilo;
+      text-align: center;
+  
+      &:hover {
+        @include mixins.card-hover;
+      }
+  
+      img {
+        width: 80%;
+        max-width: 200px;
+        height: auto;
+        border-radius: variables.$border-radius;
+        margin-bottom: 10px;
+      }
+  
+      p {
+        font-size: variables.$font-size-body;
+        color: variables.$font-color;
+        margin: 10px 0;
+      }
+    }
+  
+    .pulseras p {
+      margin: 5px 0;
+      font-family: variables.$font-family-primary;
+    }
+  
+    .btn-comprar {
+      @include mixins.boton-estilo(variables.$background-bg-color, variables.$primary-bg-color, variables.$hover-color, variables.$background-bg-color);
+      margin-top: 10px;
+    }
+  
+    .btn-nuevos-productos {
+      background-color: transparent;
+      border: none;
+      font-family: variables.$font-family-primary;
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: color 0.3s ease;
+  
+      &:hover {
+        color: variables.$color-instagram-hover;
+  
+        .flecha-abajo {
+          transform: rotate(180deg);
+        }
+      }
+  
+      .flecha-abajo {
+        font-size: 1rem;
+        transition: transform 0.3s ease;
+      }
+    }
+  } 
+  

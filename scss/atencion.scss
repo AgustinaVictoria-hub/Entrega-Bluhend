@@ -1,0 +1,98 @@
+@use 'variables';
+@use 'mixins';
+
+
+.atencion {
+  // Encabezado
+  header {
+    background-color: variables.$primary-bg-color;
+    padding: 20px;
+    h1 {
+      font-family: variables.$font-family-primary;
+      font-size: 2rem;
+      text-align: center;
+      color: variables.$font-color;
+    }
+    nav {
+      ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        li {
+          list-style: none;
+          a {
+            text-decoration: none;
+            color: variables.$font-color;
+            font-family: variables.$font-family-secondary;
+            &:hover {
+              color: variables.$hover-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Main
+  main {
+    text-align: center;
+    padding: 40px 0;
+    h2 {
+      font-family: variables.$font-family-primary;
+      font-size: 2rem;
+      color: variables.$font-color;
+    }
+
+    .welcome-card {
+      background-color: variables.$secondary-bg-color;
+      border-radius: variables.$border-radius;
+      padding: 20px;
+      box-shadow: variables.$card-shadow;
+      margin-top: 20px;
+      .pulseras {
+        font-family: variables.$font-family-primary;
+        p {
+          font-size: 1.2rem;
+          margin-bottom: 15px;
+        }
+      }
+      p {
+        font-size: variables.$font-size-body;
+        color: variables.$font-color;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  // Footer
+  footer {
+    background-color: variables.$background-bg-color;
+    color: variables.$primary-bg-color;
+    padding: 20px;
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      .footer-section {
+        width: 30%;
+        h3 {
+          font-family: variables.$font-family-primary;
+          font-size: 1.5rem;
+          color: variables.$font-color;
+        }
+        p {
+          font-size: variables.$font-size-small;
+          color: variables.$font-color;
+        }
+        .footer-list {
+          p {
+            margin: 5px 0;
+            font-size: variables.$font-size-small;
+          }
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

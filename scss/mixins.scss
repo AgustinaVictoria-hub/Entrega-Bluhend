@@ -1,0 +1,42 @@
+//MIXIN PARA TARJETAS
+@mixin card-estilo {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s ease;
+  }
+  @mixin welcome-card {
+    background-color: $secondary-bg-color;
+    border-radius: 8px;
+  }
+  @mixin card-hover {
+    transform: scale(1.05);
+  }
+  //MIXIN PARA BOTONES
+    @mixin boton-estilo(
+      $text-color: $primary-bg-color,
+  $bg-color: $background-bg-color,
+  $hover-bg: $hover-color,
+  $hover-color: $background-bg-color
+) {
+  background-color: $bg-color;
+  color: $text-color;
+  border: none;
+  //padding: $button-padding;
+  //font-size: $font-size-button;
+  cursor: pointer;
+  //border-radius: $border-radius;
+  //font-weight: $font-weight-bold;
+  width: 100%;
+  transition: background-color 0.3s;
+
+  
+    &:hover {
+      background-color: $hover-bg;
+      color: $hover-color;
+    }
+  }
+ 
+
+
+  

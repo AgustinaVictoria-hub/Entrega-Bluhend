@@ -1,0 +1,35 @@
+// TIPOGRAFIA
+$font-family-primary: 'Playfair Display', serif;
+$font-family-secondary: Arial, sans-serif;
+$font-style-italic: italic;
+//$font-family-monospace: 'Source Code Pro', 'SF Mono', Monaco, Inconsolata, 'Fira Mono',
+//'Droid Sans Mono', monospace, monospace;
+$font-style-italic: italic;
+$font-weight-bold: bold;
+$font-size-title: 2rem;         // Títulos principales
+$font-size-h2: 1.5rem;    // Subtítulos o h2
+$font-size-body: 16px;          // Texto general
+$font-size-small: 14px;         // Párrafos pequeños (como en footer o cards)
+$font-size-button: 16px;        // Botones y acciones
+$font-size-heading: 24px;
+
+//BORDES Y SOMBRAS 
+$border-radius: 10px; // Basado en tu .welcome-card y .producto
+$card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Igual a tu .welcome-card
+$card-hover-scale: 1.05; // Usado en .producto:hover
+$card-padding: 15px; // Visto en .producto
+$gap-between-cards: 20px; // Usado en .productos
+$button-padding: 10px 20px; // Coincide con tus botones
+
+//COLORES
+$secondary-bg-color: #f5f5dc; // fondo de tarjetas y páginas
+$background-bg-color: #000; // fondo de footer, textos y botones
+$primary-bg-color: #fff; // texto sobre negro
+$font-color: #333; // subtítulos, encabezados
+$text-color: #555; // texto general
+$border-color: #ccc; // bordes, inputs
+$hover-color: #ddd; // hover en botones
+$color-pulseras: rgb(83, 81, 81); // clase .pulseras
+$color-instagram-hover: #a66aa3; // hover en botón .btn-nuevos-productos
+$border-radius: 8px;
+
