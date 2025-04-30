@@ -12,7 +12,7 @@
   @mixin card-hover {
     transform: scale(1.05);
   }
-  //MIXIN PARA BOTONES
+  //MIXIN PARA BOTONES Y ANIMACIONES
     @mixin boton-estilo(
       $text-color: $primary-bg-color,
   $bg-color: $background-bg-color,
